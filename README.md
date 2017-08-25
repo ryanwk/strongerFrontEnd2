@@ -1,74 +1,39 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
+link to deployed app: https://stronger.herokuapp.com/
 
-# Authentication in Ember
+checkout the back end repo here: https://github.com/ryanwk/StrongerBackEnd
 
-This training will involve a lot of following code and and exploring the
-Chrome Inspector and utilizing Ember Inspector.  It is recommended that you
-comment code or take notes.
+Project
 
-## Prerequisites
+I am building a fitness tracker. This will primarily serve as a personal tool but other people are certainly welcome to use it as well. For years I brought a pen and notepad to the gym to track my weight lifting progress. Then I smartened up and started using excel to track my progress. I have years of data, it's not very clean, or efficient but it beats a pen and paper. Excel has a lot of functionality that I don't need and the app is cluttered and unpleasant to use. So I'm creating an app that would essentially act as a tool for me to track the weight I lift from week to week using my current routine. Other users could sign up and make add their own exercises and to track their exercise data as well.
 
--   [Ember Resources](https://github.com/ga-wdi-boston/ember-resources)
+user stories
 
-## Objectives
+As a user, I want to sign up, so that I can sign-in. As a user, I want to sign in, so I can use the app. As a user, I want to sign in, so I can save exercises. As a user, I want to sign in, so I can save weight performed on exercises. As a user, I want to save exercises, so that I have a record of when I performed certain exercises. As a user, I want to save the weight I used, so that I can keep track of how much weight I'm lifting for each exercise. As a user, I want to see my prior workouts and weight used, so I can keep an eye on my progress
 
-By the end of this, developers should be able to:
 
--   Implement token authentication in an Ember application.
--   Enforce authentication in protected routes.
+ERD diagram: https://user-images.githubusercontent.com/19196821/28430272-df76ac40-6d4d-11e7-8ac9-7c89cf31d37c.png
 
-## Preparation
+Routing
 
-1.  [Fork and clone](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone)
-    this repository.
-1.  Install dependencies with `npm install` and `bower install`.
-1.  Start any API based on a recent version of the [Rails API
-    Template](https://github.com/ga-wdi-boston/rails-api-template) or the
-    [Express API
-    Template](https://github.com/ga-wdi-boston/express-api-template).
-1.  Start the front-end server with `ember server`.
+API- Create exercise: POST; route: /exercise A user creates an exercise and this triggers a POST request to save the exercise to the DB
 
-## From end to end
+Update exercise weight: PATCH; route: exercise/:id A user enters a new date/weight for any exercise listed in exercise history. This triggers a POST request to create a new record of the weight and updates the DB.
 
-Watch as I sign up for a new account on our demo app.
+Show exercise history: GET; route: exercise/ A user clicks the 'show exercise history’ button and this triggers a GET request to index all of the exercises stored in the DB
 
-*Other than the flash messages on the page, did anything change?  What about in
-the Chrome Developer Tools?*
+Delete exercise: DELETE A user clicks the ‘delete’ button and this triggers a DELETE request and destroys the record stored in the DB.
 
-Take some time and sign in on your own, and check to see if anything in the
-Chrome Dev Tools has changed.
 
-Now that we have added a key tool to our personal developer toolkit lets look
-at how it's implemented.
 
-## Follow Along
+Wireframes
 
-Let's walk through file by file to see what's happening.  I will ask
-developers to guide me through the files while correcting any misunderstandings.
+https://user-images.githubusercontent.com/19196821/28425448-5181d93c-6d3e-11e7-973f-f851fca2435f.png
 
-First let's start down the template and component trail, then we'll work our way
-up with actions.
+https://user-images.githubusercontent.com/19196821/28425562-aaf6b73a-6d3e-11e7-9cfc-cc90991e107e.png
 
-*Remember: Data down, actions up.*
+Timetable
 
-While going up the Ember hierarchy we may need to stop a some point to discuss
-services.
 
-## Additional Resources
+day 1, 2: api day 3, 4, 5: api/front end day 6: clean up UI
 
--   [Implementing Authentication with Ember Services - Ember
-    Igniter](http://emberigniter.com/implementing-authentication-with-ember-services/)
--   [jpadilla/ember-simple-auth-token: Ember Simple Auth extension that is
-    compatible with token-based authentication like
-    JWT.](https://github.com/jpadilla/ember-simple-auth-token)
--   [simplabs/ember-simple-auth: A library for implementing
-    authentication/authorization in Ember.js
-    applications.](https://github.com/simplabs/ember-simple-auth)
--   [Create your first Ember 2.0 app: From authentication to calling an
-    API](https://auth0.com/blog/2015/08/11/create-your-first-ember-2-dot-0-app-from-authentication-to-calling-an-api/)
-
-## [License](LICENSE)
-
-1.  All content is licensed under a CC­BY­NC­SA 4.0 license.
-1.  All software code is licensed under GNU GPLv3. For commercial use or
-    alternative licensing, please contact legal@ga.co.
+Check list:
