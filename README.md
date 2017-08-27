@@ -11,7 +11,8 @@ user stories
 As a user, I want to sign up, so that I can sign-in. As a user, I want to sign in, so I can use the app. As a user, I want to sign in, so I can save exercises. As a user, I want to sign in, so I can save weight performed on exercises. As a user, I want to save exercises, so that I have a record of when I performed certain exercises. As a user, I want to save the weight I used, so that I can keep track of how much weight I'm lifting for each exercise. As a user, I want to see my prior workouts and weight used, so I can keep an eye on my progress
 
 
-ERD diagram: https://user-images.githubusercontent.com/19196821/28430272-df76ac40-6d4d-11e7-8ac9-7c89cf31d37c.png
+ERD diagram:
+
 
 Routing
 
@@ -27,13 +28,5 @@ Delete exercise: DELETE A user clicks the ‘delete’ button and this triggers 
 
 Wireframes
 
-https://user-images.githubusercontent.com/19196821/28425448-5181d93c-6d3e-11e7-973f-f851fca2435f.png
-
-https://user-images.githubusercontent.com/19196821/28425562-aaf6b73a-6d3e-11e7-9cfc-cc90991e107e.png
 
 Timetable
-
-
-day 1, 2: api day 3, 4, 5: api/front end day 6: clean up UI
-
-Check list:
