@@ -11,9 +11,6 @@ user stories
 As a user, I want to sign up, so that I can sign-in. As a user, I want to sign in, so I can use the app. As a user, I want to sign in, so I can save exercises. As a user, I want to sign in, so I can save weight performed on exercises. As a user, I want to save exercises, so that I have a record of when I performed certain exercises. As a user, I want to save the weight I used, so that I can keep track of how much weight I'm lifting for each exercise. As a user, I want to see my prior workouts and weight used, so I can keep an eye on my progress
 
 
-ERD diagram:
-
-
 Routing
 
 API- Create exercise: POST; route: /exercise A user creates an exercise and this triggers a POST request to save the exercise to the DB
@@ -26,7 +23,18 @@ Delete exercise: DELETE A user clicks the ‘delete’ button and this triggers 
 
 
 
-Wireframes
+
+Redoing Stronger app
+new resource routine
+user has many routines
+routines has many exercises
+new feature: recommended weight
+
+ERD:
+![image](https://user-images.githubusercontent.com/19196821/29722107-92bd0ce4-898d-11e7-8f70-b689d4e103eb.png)
+![image](https://user-images.githubusercontent.com/19196821/29753753-2fc48d32-8b46-11e7-9a62-5e70f639ea81.png)
 
 
-Timetable
+wireframe:
+![image](https://user-images.githubusercontent.com/19196821/29722132-a3153508-898d-11e7-9e78-e09ff1b06f1e.png)
+![image](https://user-images.githubusercontent.com/19196821/29753729-9f0d9b12-8b45-11e7-8ef3-3b23a2245267.png)
