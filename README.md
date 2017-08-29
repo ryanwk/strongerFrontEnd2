@@ -65,6 +65,9 @@ Eventually, I'd like to integrate with myFitnessPal for nutritional data, youtub
 ERD:
 ![image](https://user-images.githubusercontent.com/19196821/29722107-92bd0ce4-898d-11e7-8f70-b689d4e103eb.png)
 ![image](https://user-images.githubusercontent.com/19196821/29753753-2fc48d32-8b46-11e7-9a62-5e70f639ea81.png)
+![image](https://user-images.githubusercontent.com/19196821/29838748-0adeb792-8cca-11e7-985b-6d5c3dd51f26.png)
+![image](https://user-images.githubusercontent.com/19196821/29838761-16fd3198-8cca-11e7-900b-cb8610e92e99.png)
+https://user-images.githubusercontent.com/19196821/29844101-23b9a576-8cdc-11e7-86ff-f4fc988c5513.png
 
 
 Wireframes:
