@@ -12,6 +12,8 @@ Router.map(function () {
   this.route('users');
   this.route('exercises');
   // this.route('exercise', { path: '/exercises/:exercise_id'});
+  this.route('routines');
+  this.route('routine', { path: '/routines/:routine_id'});
 });
 
 export default Router;

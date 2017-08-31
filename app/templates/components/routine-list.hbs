@@ -1,0 +1,9 @@
+{{routine-create-form routine=routine createRoutine='createRoutine'}}
+<h2>Your Routines</h2>
+routine-list.hbs
+<ul>
+{{#each routines as |routine|}}
+  {{routine-list/card routine=routine}}
+{{/each}}
+
+</ul>

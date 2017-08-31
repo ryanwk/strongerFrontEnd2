@@ -9,6 +9,7 @@
         <li>{{#link-to "users"}}Users{{/link-to}}</li>
         {{/if}}
         <li>{{#link-to "exercises"}}Exercises{{/link-to}}</li>
+        <li>{{#link-to "routines"}}Routines{{/link-to}}</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if isAuthenticated}}
@@ -23,7 +24,8 @@
   </div>
 </nav>
 
-<h1>Stronger!</h1>
+<h1>Stronger</h1>
+<h2>Use this app to get swole!</h2>
 
 {{#each flashMessages.queue as |flash|}}
   {{flash-message flash=flash}}

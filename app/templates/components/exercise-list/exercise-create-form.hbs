@@ -1,0 +1,11 @@
+<h3>Create a new exercise</h3>
+
+<form class="form-container" {{action 'createExercise' on='submit' }}>
+  <div class="form-title">Name</div>
+    {{input placeholder='New Exercise Name'
+      value=newExercise.name
+    }}
+    <div class="submit-container">
+<button class="submit-button" type="submit" >Save</button>
+</div>
+  </form>
