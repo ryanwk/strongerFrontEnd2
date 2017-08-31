@@ -1,0 +1,11 @@
+<h3>Create a new routine</h3>
+
+<form class="form-container" {{action 'createRoutine' on='submit' }}>
+  <div class="form-title">Name</div>
+    {{input placeholder='New Routine Name'
+      value=newRoutine.name
+    }}
+    <div class="submit-container">
+<button class="submit-button" type="submit" >Save</button>
+</div>
+  </form>

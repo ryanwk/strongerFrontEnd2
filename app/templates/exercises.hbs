@@ -1,12 +1,10 @@
+{{exercise-create-form exercise=exercise createExercise='createExercise'}}
 <h2>Exercises</h2>
 
 <ul>
 
 {{#each model as |exercise|}}
 {{exercise-list/card exercise=exercise }}
-{{!-- <li>Exercise name: {{exercise.name}}</li> --}}
-<li>Exercise weight: {{exercise.weight}}</li>
-<li>Updated on: {{exercise.updated}}</li>
 {{/each}}
 
 </ul>

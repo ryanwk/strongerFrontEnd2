@@ -2,6 +2,7 @@ import DS from 'ember-data';
 
 export default DS.Model.extend({
   name: DS.attr('string'),
+  // hidden: false,
   updatedAt: DS.attr('date'),
-  lifts: DS.hasMany('lift')
+  exercises: DS.belongsTo('exercise')
 });
